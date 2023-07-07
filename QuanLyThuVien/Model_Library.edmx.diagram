@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7cd4ddf500e647aa90c9c3522aba4aba" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyThuVienModel.ChiTietThueSach" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.KhoSach" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.NguoiThue" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.Sach" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.TacGia" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.TaiKhoan" Width="1.5" PointX="7.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.TheLoai" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyThuVienModel.ThueSach" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK__ChiTietTh__MaSac__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK__ChiTietTh__MaThu__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK_KhoSach_ToSach" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK__ThueSach__MaNguo__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK__Sach__MaTacGia__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyThuVienModel.FK__Sach__MaTheLoai__35BCFE0A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

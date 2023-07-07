@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ChiTietThueSach">
+    <Key>
+      <PropertyRef Name="MaChiTiet" />
+    </Key>
+    <Property Name="MaChiTiet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaThueSach" Type="Int32" Nullable="false" />
+    <Property Name="MaSach" Type="Int32" Nullable="false" />
+    <Property Name="NgayTra" Type="DateTime" Precision="3" />
+    <Property Name="DaTra" Type="Int32" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Sach" Relationship="Self.FK__ChiTietTh__MaSac__6FE99F9F" FromRole="ChiTietThueSach" ToRole="Sach" />
+    <NavigationProperty Name="ThueSach" Relationship="Self.FK__ChiTietTh__MaThu__70DDC3D8" FromRole="ChiTietThueSach" ToRole="ThueSach" />
+  </EntityType>
+  <EntityType Name="NguoiThue">
+    <Key>
+      <PropertyRef Name="MaNguoiThue" />
+    </Key>
+    <Property Name="MaNguoiThue" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNguoiThue" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SoDienThoai" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ThueSaches" Relationship="Self.FK__ThueSach__MaNguo__49C3F6B7" FromRole="NguoiThue" ToRole="ThueSach" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="MaSach" />
+    </Key>
+    <Property Name="MaSach" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSach" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaTacGia" Type="Int32" Nullable="false" />
+    <Property Name="MaTheLoai" Type="Int32" Nullable="false" />
+    <Property Name="TenNXB" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NamXuatBan" Type="Int32" Nullable="false" />
+    <Property Name="LinkHinh" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ChiTietThueSaches" Relationship="Self.FK__ChiTietTh__MaSac__6FE99F9F" FromRole="Sach" ToRole="ChiTietThueSach" />
+    <NavigationProperty Name="TacGia" Relationship="Self.FK__Sach__MaTacGia__29572725" FromRole="Sach" ToRole="TacGia" />
+    <NavigationProperty Name="TheLoai" Relationship="Self.FK__Sach__MaTheLoai__2A4B4B5E" FromRole="Sach" ToRole="TheLoai" />
+  </EntityType>
+  <EntityType Name="TacGia">
+    <Key>
+      <PropertyRef Name="MaTacGia" />
+    </Key>
+    <Property Name="MaTacGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTacGia" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NamSinh" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Saches" Relationship="Self.FK__Sach__MaTacGia__29572725" FromRole="TacGia" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="C_USER" />
+    </Key>
+    <Property Name="C_USER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="C_PASSWORD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TheLoai">
+    <Key>
+      <PropertyRef Name="MaTheLoai" />
+    </Key>
+    <Property Name="MaTheLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTheLoai" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Saches" Relationship="Self.FK__Sach__MaTheLoai__2A4B4B5E" FromRole="TheLoai" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="ThueSach">
+    <Key>
+      <PropertyRef Name="MaThueSach" />
+    </Key>
+    <Property Name="MaThueSach" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNguoiThue" Type="Int32" Nullable="false" />
+    <Property Name="NgayThue" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="ChiTietThueSaches" Relationship="Self.FK__ChiTietTh__MaThu__70DDC3D8" FromRole="ThueSach" ToRole="ChiTietThueSach" />
+    <NavigationProperty Name="NguoiThue" Relationship="Self.FK__ThueSach__MaNguo__49C3F6B7" FromRole="ThueSach" ToRole="NguoiThue" />
+  </EntityType>
+  <Association Name="FK__ChiTietTh__MaSac__6FE99F9F">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
+    <End Role="ChiTietThueSach" Type="Self.ChiTietThueSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="MaSach" />
+      </Principal>
+      <Dependent Role="ChiTietThueSach">
+        <PropertyRef Name="MaSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietTh__MaThu__70DDC3D8">
+    <End Role="ThueSach" Type="Self.ThueSach" Multiplicity="1" />
+    <End Role="ChiTietThueSach" Type="Self.ChiTietThueSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ThueSach">
+        <PropertyRef Name="MaThueSach" />
+      </Principal>
+      <Dependent Role="ChiTietThueSach">
+        <PropertyRef Name="MaThueSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThueSach__MaNguo__49C3F6B7">
+    <End Role="NguoiThue" Type="Self.NguoiThue" Multiplicity="1" />
+    <End Role="ThueSach" Type="Self.ThueSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiThue">
+        <PropertyRef Name="MaNguoiThue" />
+      </Principal>
+      <Dependent Role="ThueSach">
+        <PropertyRef Name="MaNguoiThue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__MaTacGia__29572725">
+    <End Role="TacGia" Type="Self.TacGia" Multiplicity="1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TacGia">
+        <PropertyRef Name="MaTacGia" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="MaTacGia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__MaTheLoai__2A4B4B5E">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheLoai">
+        <PropertyRef Name="MaTheLoai" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="MaTheLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Library_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChiTietThueSaches" EntityType="Self.ChiTietThueSach" />
+    <EntitySet Name="NguoiThues" EntityType="Self.NguoiThue" />
+    <EntitySet Name="Saches" EntityType="Self.Sach" />
+    <EntitySet Name="TacGias" EntityType="Self.TacGia" />
+    <EntitySet Name="TaiKhoans" EntityType="Self.TaiKhoan" />
+    <EntitySet Name="TheLoais" EntityType="Self.TheLoai" />
+    <EntitySet Name="ThueSaches" EntityType="Self.ThueSach" />
+    <AssociationSet Name="FK__ChiTietTh__MaSac__6FE99F9F" Association="Self.FK__ChiTietTh__MaSac__6FE99F9F">
+      <End Role="Sach" EntitySet="Saches" />
+      <End Role="ChiTietThueSach" EntitySet="ChiTietThueSaches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietTh__MaThu__70DDC3D8" Association="Self.FK__ChiTietTh__MaThu__70DDC3D8">
+      <End Role="ThueSach" EntitySet="ThueSaches" />
+      <End Role="ChiTietThueSach" EntitySet="ChiTietThueSaches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThueSach__MaNguo__49C3F6B7" Association="Self.FK__ThueSach__MaNguo__49C3F6B7">
+      <End Role="NguoiThue" EntitySet="NguoiThues" />
+      <End Role="ThueSach" EntitySet="ThueSaches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__MaTacGia__29572725" Association="Self.FK__Sach__MaTacGia__29572725">
+      <End Role="TacGia" EntitySet="TacGias" />
+      <End Role="Sach" EntitySet="Saches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__MaTheLoai__2A4B4B5E" Association="Self.FK__Sach__MaTheLoai__2A4B4B5E">
+      <End Role="TheLoai" EntitySet="TheLoais" />
+      <End Role="Sach" EntitySet="Saches" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

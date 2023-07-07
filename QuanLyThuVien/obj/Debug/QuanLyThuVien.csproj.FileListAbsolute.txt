@@ -1,0 +1,112 @@
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\Library.mdf
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\Library_log.ldf
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.dll
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\FontAwesome.Sharp.dll
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.xml
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.AssemblyReference.cache
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormDangNhap.resources
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormQuenMatKhau.resources
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormSach.resources
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTimKiem.resources
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Home.resources
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\Năm 3\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\Library.mdf
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\Library_log.ldf
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\FontAwesome.Sharp.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\Guna.UI2.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Security.AccessControl.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Security.Permissions.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Security.Principal.Windows.dll
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.xml
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.FormHomeAdmin.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_NhanVien_Sua.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_NhanVien_Them.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_Sach_Sua.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_Sach_Them.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TacGia_Sua.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TacGia_Them.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TheLoai_Sua.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TheLoai_Them.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.ChiTiet.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormChiTietThueSach.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormChoThue.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormDangNhap.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormDanhSachChiTiet.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormGiaHan.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormQuenMatKhau.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormSach.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTacGia.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTheLoai.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormThueSach.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTimKiem.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Home.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormQuaHan.resources
+D:\Năm 3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\Library.mdf
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\Library_log.ldf
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\FontAwesome.Sharp.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\Guna.UI2.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Security.AccessControl.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Security.Permissions.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\System.Security.Principal.Windows.dll
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.xml
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.AssemblyReference.cache
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.FormHomeAdmin.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_NhanVien_Sua.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_NhanVien_Them.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_Sach_Sua.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_Sach_Them.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TacGia_Sua.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TacGia_Them.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TheLoai_Sua.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Areas.FormsAdmin.Form_TheLoai_Them.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.ChiTiet.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormChiTietThueSach.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormChoThue.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormDangNhap.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormDanhSachChiTiet.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormGiaHan.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormQuaHan.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormQuenMatKhau.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormSach.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTacGia.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTheLoai.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormThueSach.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Forms.FormTimKiem.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Home.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CopyComplete
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\Nam3\DotNet\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb

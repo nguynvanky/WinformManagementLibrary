@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryModelStoreContainer" CdmEntityContainer="Library_Entities">
+    <EntitySetMapping Name="ChiTietThueSaches">
+      <EntityTypeMapping TypeName="LibraryModel.ChiTietThueSach">
+        <MappingFragment StoreEntitySet="ChiTietThueSach">
+          <ScalarProperty Name="MaChiTiet" ColumnName="MaChiTiet" />
+          <ScalarProperty Name="MaThueSach" ColumnName="MaThueSach" />
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="NgayThue" ColumnName="NgayThue" />
+          <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
+          <ScalarProperty Name="DaTra" ColumnName="DaTra" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="NguoiChoThue" ColumnName="NguoiChoThue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoiThues">
+      <EntityTypeMapping TypeName="LibraryModel.NguoiThue">
+        <MappingFragment StoreEntitySet="NguoiThue">
+          <ScalarProperty Name="MaNguoiThue" ColumnName="MaNguoiThue" />
+          <ScalarProperty Name="TenNguoiThue" ColumnName="TenNguoiThue" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saches">
+      <EntityTypeMapping TypeName="LibraryModel.Sach">
+        <MappingFragment StoreEntitySet="Sach">
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+          <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
+          <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+          <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
+          <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
+          <ScalarProperty Name="LinkHinh" ColumnName="LinkHinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TacGias">
+      <EntityTypeMapping TypeName="LibraryModel.TacGia">
+        <MappingFragment StoreEntitySet="TacGia">
+          <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
+          <ScalarProperty Name="TenTacGia" ColumnName="TenTacGia" />
+          <ScalarProperty Name="NamSinh" ColumnName="NamSinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiKhoans">
+      <EntityTypeMapping TypeName="LibraryModel.TaiKhoan">
+        <MappingFragment StoreEntitySet="TaiKhoan">
+          <ScalarProperty Name="C_USER" ColumnName="_USER" />
+          <ScalarProperty Name="C_PASSWORD" ColumnName="_PASSWORD" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TheLoais">
+      <EntityTypeMapping TypeName="LibraryModel.TheLoai">
+        <MappingFragment StoreEntitySet="TheLoai">
+          <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+          <ScalarProperty Name="TenTheLoai" ColumnName="TenTheLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThueSaches">
+      <EntityTypeMapping TypeName="LibraryModel.ThueSach">
+        <MappingFragment StoreEntitySet="ThueSach">
+          <ScalarProperty Name="MaThueSach" ColumnName="MaThueSach" />
+          <ScalarProperty Name="MaNguoiThue" ColumnName="MaNguoiThue" />
+          <ScalarProperty Name="SoSachDaMuon" ColumnName="SoSachDaMuon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

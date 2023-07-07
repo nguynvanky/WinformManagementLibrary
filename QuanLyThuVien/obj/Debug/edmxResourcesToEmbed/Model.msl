@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DOAN_QUANLYTHUVIENModelStoreContainer" CdmEntityContainer="Library_Entities">
+    <EntitySetMapping Name="NguoiThues">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.NguoiThue">
+        <MappingFragment StoreEntitySet="NguoiThue">
+          <ScalarProperty Name="MaNguoiThue" ColumnName="MaNguoiThue" />
+          <ScalarProperty Name="TenNguoiThue" ColumnName="TenNguoiThue" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saches">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.Sach">
+        <MappingFragment StoreEntitySet="Sach">
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+          <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
+          <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+          <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
+          <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
+          <ScalarProperty Name="LinkHinh" ColumnName="LinkHinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TacGias">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.TacGia">
+        <MappingFragment StoreEntitySet="TacGia">
+          <ScalarProperty Name="MaTacGia" ColumnName="MaTacGia" />
+          <ScalarProperty Name="TenTacGia" ColumnName="TenTacGia" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaiKhoans">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.TaiKhoan">
+        <MappingFragment StoreEntitySet="TaiKhoan">
+          <ScalarProperty Name="C_USER" ColumnName="_USER" />
+          <ScalarProperty Name="C_PASSWORD" ColumnName="_PASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TheLoais">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.TheLoai">
+        <MappingFragment StoreEntitySet="TheLoai">
+          <ScalarProperty Name="MaTheLoai" ColumnName="MaTheLoai" />
+          <ScalarProperty Name="TenTheLoai" ColumnName="TenTheLoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThueSaches">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.ThueSach">
+        <MappingFragment StoreEntitySet="ThueSach">
+          <ScalarProperty Name="MaThueSach" ColumnName="MaThueSach" />
+          <ScalarProperty Name="MaNguoiThue" ColumnName="MaNguoiThue" />
+          <ScalarProperty Name="NgayThue" ColumnName="NgayThue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietThueSaches">
+      <EntityTypeMapping TypeName="DOAN_QUANLYTHUVIENModel.ChiTietThueSach">
+        <MappingFragment StoreEntitySet="ChiTietThueSach">
+          <ScalarProperty Name="MaThueSach" ColumnName="MaThueSach" />
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
+          <ScalarProperty Name="DaTra" ColumnName="DaTra" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

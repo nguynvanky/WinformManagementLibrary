@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ChiTietThueSach">
+    <Key>
+      <PropertyRef Name="MaChiTiet" />
+    </Key>
+    <Property Name="MaChiTiet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaThueSach" Type="int" Nullable="false" />
+    <Property Name="MaSach" Type="int" Nullable="false" />
+    <Property Name="NgayTra" Type="datetime" />
+    <Property Name="DaTra" Type="int" Nullable="false" />
+    <Property Name="GhiChu" Type="text" />
+  </EntityType>
+  <EntityType Name="NguoiThue">
+    <Key>
+      <PropertyRef Name="MaNguoiThue" />
+    </Key>
+    <Property Name="MaNguoiThue" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNguoiThue" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DiaChi" Type="text" Nullable="false" />
+    <Property Name="SoDienThoai" Type="char" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="MaSach" />
+    </Key>
+    <Property Name="MaSach" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenSach" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="MaTacGia" Type="int" Nullable="false" />
+    <Property Name="MaTheLoai" Type="int" Nullable="false" />
+    <Property Name="TenNXB" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="NamXuatBan" Type="int" Nullable="false" />
+    <Property Name="LinkHinh" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TacGia">
+    <Key>
+      <PropertyRef Name="MaTacGia" />
+    </Key>
+    <Property Name="MaTacGia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenTacGia" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NamSinh" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaiKhoan">
+    <Key>
+      <PropertyRef Name="_USER" />
+    </Key>
+    <Property Name="_USER" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="_PASSWORD" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TheLoai">
+    <Key>
+      <PropertyRef Name="MaTheLoai" />
+    </Key>
+    <Property Name="MaTheLoai" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenTheLoai" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ThueSach">
+    <Key>
+      <PropertyRef Name="MaThueSach" />
+    </Key>
+    <Property Name="MaThueSach" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNguoiThue" Type="int" Nullable="false" />
+    <Property Name="NgayThue" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__ChiTietTh__MaSac__6FE99F9F">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
+    <End Role="ChiTietThueSach" Type="Self.ChiTietThueSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="MaSach" />
+      </Principal>
+      <Dependent Role="ChiTietThueSach">
+        <PropertyRef Name="MaSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ChiTietTh__MaThu__70DDC3D8">
+    <End Role="ThueSach" Type="Self.ThueSach" Multiplicity="1" />
+    <End Role="ChiTietThueSach" Type="Self.ChiTietThueSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ThueSach">
+        <PropertyRef Name="MaThueSach" />
+      </Principal>
+      <Dependent Role="ChiTietThueSach">
+        <PropertyRef Name="MaThueSach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__MaTacGia__29572725">
+    <End Role="TacGia" Type="Self.TacGia" Multiplicity="1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TacGia">
+        <PropertyRef Name="MaTacGia" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="MaTacGia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__MaTheLoai__2A4B4B5E">
+    <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TheLoai">
+        <PropertyRef Name="MaTheLoai" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="MaTheLoai" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ThueSach__MaNguo__49C3F6B7">
+    <End Role="NguoiThue" Type="Self.NguoiThue" Multiplicity="1" />
+    <End Role="ThueSach" Type="Self.ThueSach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiThue">
+        <PropertyRef Name="MaNguoiThue" />
+      </Principal>
+      <Dependent Role="ThueSach">
+        <PropertyRef Name="MaNguoiThue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibraryModelStoreContainer">
+    <EntitySet Name="ChiTietThueSach" EntityType="Self.ChiTietThueSach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiThue" EntityType="Self.NguoiThue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TacGia" EntityType="Self.TacGia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiKhoan" EntityType="Self.TaiKhoan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ThueSach" EntityType="Self.ThueSach" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ChiTietTh__MaSac__6FE99F9F" Association="Self.FK__ChiTietTh__MaSac__6FE99F9F">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="ChiTietThueSach" EntitySet="ChiTietThueSach" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ChiTietTh__MaThu__70DDC3D8" Association="Self.FK__ChiTietTh__MaThu__70DDC3D8">
+      <End Role="ThueSach" EntitySet="ThueSach" />
+      <End Role="ChiTietThueSach" EntitySet="ChiTietThueSach" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__MaTacGia__29572725" Association="Self.FK__Sach__MaTacGia__29572725">
+      <End Role="TacGia" EntitySet="TacGia" />
+      <End Role="Sach" EntitySet="Sach" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__MaTheLoai__2A4B4B5E" Association="Self.FK__Sach__MaTheLoai__2A4B4B5E">
+      <End Role="TheLoai" EntitySet="TheLoai" />
+      <End Role="Sach" EntitySet="Sach" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ThueSach__MaNguo__49C3F6B7" Association="Self.FK__ThueSach__MaNguo__49C3F6B7">
+      <End Role="NguoiThue" EntitySet="NguoiThue" />
+      <End Role="ThueSach" EntitySet="ThueSach" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
